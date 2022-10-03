@@ -7,4 +7,4 @@ kortingsprijs = 0.50
 
 prijs = (croisantjes * prijsproduct + stokbroden * prijsproduct1 - kortingsbonnen * kortingsprijs )
 
-print("de feestlunch kost",prijs ,"euro voor de" ' ',croisantjes, ' ' "croisantjes en de" ' ',stokbroden, ' ' "stokbroden als de" ' ' ,kortingsbonnen, ' ' "korting bonnen nog geldig zijn")
+print("de feestlunch kost",prijs ,"euro voor de" ,croisantjes , "croisantjes en de" ,stokbroden , "stokbroden als de" ,kortingsbonnen , "korting bonnen nog geldig zijn")
