@@ -2,18 +2,16 @@
 #Jullie willen ook met zijn allen voor 45 minuten in de VIP-VR-GameSeat.
 #De VIP-VR GameSeat kost per persoon 37 eurocent per 5 minuten.
 #Jij trakteert dus betaal je alles.
-antwoord = True or False
-persoonen = input 
-dag_kaart_per_persoon = 7.45
-vijf_minuten = 0.37
-een_minuut = vijf_minuten / 5
-persoonen = int(input("met hoe veel persoonen bent u "))
-prijs1 = dag_kaart_per_persoon * persoonen
-antwoord = input("willen jullie ook nog naar de VIP_VR_SEAT")
 
+dag_kaart_per_persoon_cent = 745
+vijf_minuten_cent = 37
+een_minuut = vijf_minuten_cent / 5
+persoonen = int(input("met hoe veel persoonen bent u "))
+prijs1 = dag_kaart_per_persoon_cent * persoonen / 100
+antwoord = input("willen jullie ook nog naar de VIP_VR_SEAT")
 if antwoord == "ja":
-    tijd = float(input("hoe lang willen jullie"))
-    prijs2 = een_minuut * tijd * persoonen
+    tijd = int(input("hoe lang willen jullie"))
+    prijs2 = een_minuut * tijd * persoonen / 100
     prijs = prijs1 + prijs2
     print("Dit geweldige dagje-uit met" ,persoonen , "mensen in de speelhal met" ,tijd , "minuten VR kost je maar" ,prijs , "euro")
 
