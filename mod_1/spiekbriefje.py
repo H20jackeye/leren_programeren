@@ -29,3 +29,24 @@ print(f'hallo {antwoord}, leuk kennis te maken!')
 
 # int () = zet om naar int
 getal = int('6')
+
+#range
+from tkinter import Y
+
+
+for x in range(1, 11, 1):
+    print(type(x))
+    print(x)
+
+y = 1
+while y < 11:
+    print(y)
+    y += 1
+
+word = input("wat is het woord ")
+word2 = ""
+for c in word:
+    word2 += c
+    print(c)
+
+print(word2)

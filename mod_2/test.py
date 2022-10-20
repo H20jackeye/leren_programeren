@@ -1,7 +1,7 @@
-word = input("wat is het woord ")
-word2 = ""
-for c in word:
-    word2 += c
-    print(c)
+naam = input("wat is je naam")
+aantal = int(input("aantal zinnen"))
 
-print(word2)
+y = 1
+while aantal >= y:
+    print(f"je bent geweldig {naam}")
+    y += 1
