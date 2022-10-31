@@ -18,45 +18,54 @@
 
  #Lucas van eijnsbergen Opdracht: pizza calculator
 
-margherita = float(3.00)  
-hawaii = float(3.14)
-salami = float(3.79)
+MARGHERITA = 3.00  
+HAWAII = 3.14
+SALAMI = 3.79
 
-pizza_soort = input("hallo, goede dag wat wilt u bestelen: ")
+vraag = input("hallo, goede dag wat wilt u bestelen: ")
 
-if pizza_soort == "margherita":
-    pizza_soort = margherita
+if vraag == "margherita":
+    pizza_prijs = MARGHERITA
 
-elif pizza_soort == "hawaii":
-    pizza_soort = hawaii
+elif vraag == "hawaii":
+    pizza_prijs = HAWAII
 
-elif pizza_soort == "salami":
-    pizza_soort = salami
+elif vraag == "salami":
+    pizza_prijs = SALAMI
+
+if vraag == "margherita":
+    pizza_soort = "pizza-margherita"
+
+elif vraag == "hawaii":
+   pizza_soort = "pizza-hawaii"
+
+elif vraag == "salami":
+   pizza_soort = "pizza-salami"
 
 pizza_aantal = int(input("hoe veel pizza`s wilt u?"))
     
 pizza_grootte = input("hoe groot wilt u de pizza, 'small', 'medium', 'large'?.")
 
-large = float(0.25)
+large = 0.25
 
-meduim = pizza_soort
+meduim = pizza_prijs
 
-small = float(0.25)
+small = 0.25
 
 if pizza_grootte == 'large':
     zin = 'large optellen'
-    antwoord = (pizza_soort + large) * pizza_aantal
+    antwoord = (pizza_prijs + large) * pizza_aantal
 
 if pizza_grootte == 'medium':
  zin = 'medium'
- antwoord = (pizza_soort) * pizza_aantal
+ antwoord = pizza_prijs * pizza_aantal
 
 if pizza_grootte == 'small':
     zin = 'small aftrekken'
-    antwoord = (pizza_soort - small) * pizza_aantal
+    antwoord = (pizza_prijs - small) * pizza_aantal
 
 print("--------------------------------------------")
-print(f"| pizza: {antwoord}                        ")
+print(f"| pizza: {pizza_soort}                     ")
 print(f"| *                                        ")
 print(f"| hoeveel heid: {pizza_aantal}             ")
 print(f"| *                                        ")
