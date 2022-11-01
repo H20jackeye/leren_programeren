@@ -20,6 +20,9 @@ elif a < b:
     if b > a:
         print("a is kleiner dan b")
         print(y)
+else: a == b
+if a == b:
+    print("a en b zijn even groot")
 
 
 
