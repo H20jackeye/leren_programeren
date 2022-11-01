@@ -8,13 +8,19 @@
 a = input("kies een geheel getal")
 b = input("kies een geheel getal")
 x = max(a, b)
-
+y = min(a, b)
 
 if b < a:
     a > b
     if a > b:
         print("a is groter dan b")
         print(x)
+elif a < b:
+    b > a
+    if b > a:
+        print("a is kleiner dan b")
+        print(y)
+
 
 
             
