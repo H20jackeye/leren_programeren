@@ -24,7 +24,8 @@ else: a == b
 if a == b:
     print("a en b zijn even groot")
 
-
+print(f"het minimum is: {y}")
+print(f"het maximum is: {x}")
 
             
 
