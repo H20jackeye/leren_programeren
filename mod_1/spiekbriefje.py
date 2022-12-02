@@ -60,3 +60,23 @@ while antwoord != "stop":
     print (teller)
 
 print(f"aantal enter: {teller}")
+
+
+mylist = [5, 12, 19, 27, 3,]
+print(mylist)
+mylist.append(25)
+print(mylist)
+
+
+
+#raandom namen kiezen
+#from random import choice
+
+naam_lijst = []
+naam = input("voer een naam in, of quit")
+while naam != "quit":
+    naam_lijst.append(naam)
+    naam = input("voer een naam in, of quit")
+
+print(naam_lijst)
+print(choice(naam_lijst))
