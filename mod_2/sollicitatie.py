@@ -10,13 +10,10 @@ print("|Dus blijf rustig en blijf gefocused                    |")
 print("|-------------------------------------------------------|")
 naam = input("|wat is uw naam ?: ")
 leeftijd = int(input("|hoe oud ben je?: "))
-if leeftijd > 18:
+if leeftijd >= 18:
     leeftijd_voldoet = True
-if leeftijd == 18:
-   leeftijd_voldoet = True
 else:
     leeftijd_voldoet = False
-
 
 Diploma_mbo_4 = input("|ben je in bezit van een Mbo 4 Diploma? J/N : ")
 if Diploma_mbo_4 == "j":
@@ -41,7 +38,7 @@ else:
 
 man_of_vrouw = input("|wat is uw geslacht m/v? : ")
 if man_of_vrouw == "m":
-    'Man'
+    #'Man'
     snor = input("|heeft u een snor van minimaal 10cm breed j/n? :")
     if snor == "j":
         heeft_snor = True
@@ -51,7 +48,7 @@ if man_of_vrouw == "m":
 
 
 if man_of_vrouw == "v":
-    'Vrouw'
+    #'Vrouw'
     haar_kleur = input("|heeft u rood haar? j/n? :")
     if haar_kleur == "j":
         heeft_rood_haar = True
@@ -60,35 +57,25 @@ if man_of_vrouw == "v":
 
     if haar_kleur == "j" or "n":
         haar_lengte = int(input("|hoe lang is je haar? : ")) 
-        if haar_lengte > 20:
+        if haar_lengte >= 20:
             heeft_juiste_haar_lengte = True
-        if haar_lengte == 20:
-            heeft_juiste_haar_lengte = True
-        if haar_lengte < 20:
+        else:
             heeft_juiste_haar_lengte = False
 
 lengte_persoon = int(input("|hoe lang ben je?"))
-if lengte_persoon > 150:
+if lengte_persoon >= 150 and lengte_persoon <= 220:
     is_lang_genoeg = True
-if lengte_persoon == 150 or 220:
-    is_lang_genoeg = True
-if lengte_persoon < 150:
-    is_lang_genoeg = False
-if lengte_persoon > 220:
+else:    
     is_lang_genoeg = False
 
 #Is zwaarder dan 90 kg en lichter dan 120 kg
 
-gewicht = int(input("|hoe veel weeg je?"))
-if gewicht > 90:
+gewicht = int(input("|hoeveel weeg je?"))
+if gewicht >= 90 and gewicht <= 120:
     weegt_genoeg = True
-if gewicht < 90:
+else:
     weegt_genoeg = False
-if gewicht == 90 or 120:
-    weegt_genoeg = True
-if gewicht > 120:
-    weegt_genoeg = False
-
+    
 #Heeft Certificaat “Overleven met gevaarlijk personeel”
 certificaat = input("|heb je een certificaat voor “Overleven met gevaarlijk personeel”? J/N ")
 if certificaat == "j":
@@ -118,23 +105,17 @@ if praktijk_ervaring == "j":
     jaar_ervaring = int(input("|hoe veel jaar deed je het?"))
 
 if praktijk_ervaring == "j":
-    if praktijken == "dierendressuur" and jaar_ervaring > 4:
-        dierendressuur = True
-    if praktijken == "dierendressuur" and jaar_ervaring == 4:
+    if praktijken == "dierendressuur" and jaar_ervaring >= 4:
         dierendressuur = True
     else:
         dierendressuur = False
 
-    if praktijken == "jongleren" and jaar_ervaring > 5:
-        jongleren = True
-    if praktijken == "jongleren" and jaar_ervaring == 5:
+    if praktijken == "jongleren" and jaar_ervaring >= 5:
         jongleren = True
     else:
         jongleren = False
 
-    if praktijken == "acrobatiek" and jaar_ervaring > 3:
-        acrobatiek = True
-    if praktijken == "acrobatiek" and jaar_ervaring == 3:
+    if praktijken == "acrobatiek" and jaar_ervaring >= 3:
         acrobatiek = True
     else:
         acrobatiek = False
