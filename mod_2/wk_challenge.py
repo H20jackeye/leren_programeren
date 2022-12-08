@@ -54,9 +54,9 @@ wedstrijd_2_scoren_land_2 = input(f"wat is de scoren van: {land_2_naam}:")
 wedstrijd_2_scoren_land_3 = input(f"wat is de scoren van: {land_3_naam}:")
 
 if wedstrijd_2_scoren_land_2 > wedstrijd_2_scoren_land_3:
-    winaar_wedstrijd_2 = wedstrijd_1_scoren_land_2
-if wedstrijd_2_scoren_land_3 > wedstrijd_1_scoren_land_2:
-    winaar_wedstrijd_2 = wedstrijd_1_scoren_land_3
+    winaar_wedstrijd_2 = wedstrijd_2_scoren_land_2
+if wedstrijd_2_scoren_land_3 > wedstrijd_2_scoren_land_2:
+    winaar_wedstrijd_2 = wedstrijd_2_scoren_land_3
 
 land_1_doelsaldo_punten_w2 = 0
 land_2_doelsaldo_punten_w2 = 0
