@@ -84,3 +84,38 @@ print("-------------------------------------------------------------------")
 
 #WEDSTRIJD 3
 
+wedstrijd_3_scoren_land_1 = 0 
+wedstrijd_3_scoren_land_2 = 0
+wedstrijd_3_scoren_land_3 = 0 
+
+wedstrijd_3_scoren_land_1 = input(f"wat is de scoren van: {land_1_naam}:")
+wedstrijd_3_scoren_land_3 = input(f"wat is de scoren van: {land_3_naam}:")
+
+if wedstrijd_3_scoren_land_1 > wedstrijd_3_scoren_land_3:
+    winaar_wedstrijd_3 = wedstrijd_3_scoren_land_1
+if wedstrijd_3_scoren_land_3 > wedstrijd_3_scoren_land_1:
+    winaar_wedstrijd_3 = wedstrijd_3_scoren_land_3
+
+land_1_doelsaldo_punten_w3 = 0
+land_2_doelsaldo_punten_w3 = 0
+land_3_doelsaldo_punten_w3 = 0
+
+if winaar_wedstrijd_3 == wedstrijd_3_scoren_land_1:
+    land_1_doelsaldo_punten_w3 = doelsaldo_winaar_1
+
+if doelsaldo_winaar_1 == land_1_doelsaldo_punten_w3:
+    land_3_doelsaldo_punten_w3 = doelsaldo_loser_1
+
+if winaar_wedstrijd_3 == wedstrijd_3_scoren_land_3:
+    land_3_doelsaldo_punten_w3 = doelsaldo_winaar_1
+
+if doelsaldo_winaar_1 == land_3_doelsaldo_punten_w3:
+    land_1_doelsaldo_punten_w3 = doelsaldo_loser_1
+
+print("-------------------------------------------------------------------")
+print(f"wedstrijd {land_1_naam} - {land_3_naam} eindigde in: {wedstrijd_3_scoren_land_1} - {wedstrijd_3_scoren_land_3}")
+print("Overzicht Groep A")
+print(f"{land_1_naam}: punten: {wedstrijd_3_scoren_land_1} doelsaldo: {land_1_doelsaldo_punten_w3}")
+print(f"{land_2_naam}: punten: {wedstrijd_3_scoren_land_2} doelsaldo: {land_2_doelsaldo_punten_w3}")
+print(f"{land_3_naam}: punten: {wedstrijd_3_scoren_land_3} doelsaldo: {land_3_doelsaldo_punten_w3}")
+print("-------------------------------------------------------------------")
