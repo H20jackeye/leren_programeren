@@ -43,3 +43,5 @@ print(f"{land_1_naam}: punten{wedstrijd_1_scoren_land_1} doelsaldo: {land_1_doel
 print(f"{land_2_naam}: punten{wedstrijd_1_scoren_land_2} doelsaldo: {land_2_totaal_punten_scoren}")
 print(f"{land_3_naam}: punten{wedstrijd_1_scoren_land_3} doelsaldo: {land_3_totaal_punten_scoren}")
 print("-------------------------------------------------------------------")
+
+print("lol")
