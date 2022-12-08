@@ -7,13 +7,13 @@ favoriteSeason = input(f"Wat is jouw favorite seizoen {name}? A) Lente, B) Zomer
 
 answer = favoriteSeason.lower
 
-if answer == "a":
+if answer == 'a':
     print("Ik hou ook van de lente!")
-elif answer == "b":
+elif answer == 'b':
     print("De zomer is voor mij te warm.")
-elif answer == "c":
+elif answer == 'c':
     print("Mooi he, al die blaadjes die dan van de boom vallen.")
-elif answer == "d":
+elif answer == 'd':
     print("Is de winter niet erg koud?")
 else:
     print("Die ken ik niet...")
