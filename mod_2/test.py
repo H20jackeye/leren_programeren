@@ -81,3 +81,6 @@ print(f"{land_1_naam}: punten: {wedstrijd_2_scoren_land_1} doelsaldo: {land_1_do
 print(f"{land_2_naam}: punten: {wedstrijd_2_scoren_land_2} doelsaldo: {land_2_doelsaldo_punten_w2}")
 print(f"{land_3_naam}: punten: {wedstrijd_2_scoren_land_3} doelsaldo: {land_3_doelsaldo_punten_w2}")
 print("-------------------------------------------------------------------")
+
+#WEDSTRIJD 3
+
