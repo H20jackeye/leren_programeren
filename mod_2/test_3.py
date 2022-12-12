@@ -1,4 +1,6 @@
 import random
+
+
 getal1 = random.randint(1,10)
 getal2 = random.randint(5,15)
 

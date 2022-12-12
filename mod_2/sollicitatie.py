@@ -153,7 +153,7 @@ else:
 
 print("|-------------------------------------------------------")
 if man_of_vrouw == "m":
-    if leeftijd_voldoet and heeft_diploma_mbo4 and heeft_geldig_vrachtwagen_rijbewijs and heeft_hoge_hoed and heeft_snor and is_lang_genoeg and weegt_genoeg and heeft_certificaat and dierendressuur or jongleren or acrobatiek == True:
+    if leeftijd_voldoet and heeft_diploma_mbo4 and heeft_geldig_vrachtwagen_rijbewijs and heeft_hoge_hoed and heeft_snor and is_lang_genoeg and weegt_genoeg and heeft_certificaat and (dierendressuur or jongleren or acrobatiek):
         print("|-------------------------------------------------------")
         print("|---je bent geschikt voor het werk we zien je maandag---")
         print("|-------------------------------------------------------")
@@ -165,7 +165,7 @@ if man_of_vrouw == "m":
 
 
 if man_of_vrouw == "v":
-    if leeftijd_voldoet and heeft_diploma_mbo4 and heeft_geldig_vrachtwagen_rijbewijs and heeft_hoge_hoed and heeft_rood_haar and heeft_juiste_haar_lengte and is_lang_genoeg and weegt_genoeg and heeft_certificaat and dierendressuur or jongleren or acrobatiek == True:
+    if leeftijd_voldoet and heeft_diploma_mbo4 and heeft_geldig_vrachtwagen_rijbewijs and heeft_hoge_hoed and heeft_rood_haar and heeft_juiste_haar_lengte and is_lang_genoeg and weegt_genoeg and heeft_certificaat and (dierendressuur or jongleren or acrobatiek):
         print("|-------------------------------------------------------")
         print("|---je bent geschikt voor het werk we zien je maandag---")
         print("|-------------------------------------------------------")
@@ -173,4 +173,3 @@ if man_of_vrouw == "v":
         print("|-------------------------------------------------------")
         print("|---------je bent niet geschikt voor het werk-----------")
         print("|-------------------------------------------------------")
-    

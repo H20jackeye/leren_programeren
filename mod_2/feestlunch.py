@@ -1,17 +1,10 @@
-croisantjes = int(input("hoe veel croisantjes wilt u hebben ? "))
-prijscroisantjes_cent = 39
-prijsproduct_croisantjes_totaal = croisantjes * prijscroisantjes_cent
+croisantjes = 17
+prijsproduct = 0.39
+stokbroden = 2
+prijsproduct1 = 2.78
+kortingsbonnen = 3 
+kortingsprijs = 0.50
 
+prijs = (croisantjes * prijsproduct + stokbroden * prijsproduct1 - kortingsbonnen * kortingsprijs )
 
-stokbroden = int(input("hoe veel stokbroden wil u ? "))
-prijsstokbroden_cent = 278
-prijsproduct_stokbrood_totaal = stokbroden * prijsstokbroden_cent
-
-kortingsbonnen = int(input("hoe veel kortings bonen heeft u ?"))
-kortingsprijs_cent = 50
-kortingsprijs_totaal = kortingsbonnen * kortingsprijs_cent
-
-
-prijs = (prijsproduct_croisantjes_totaal + prijsproduct_stokbrood_totaal - kortingsprijs_totaal ) / 100
-
-print("de feestlunch kost",prijs ,"euro voor de" ,croisantjes , "croisantjes en de" ,stokbroden , "stokbroden als de" ,kortingsbonnen , "korting bonnen nog geldig zijn")
+print("de feestlunch kost",prijs ,"euro voor de" ' ',croisantjes, ' ' "croisantjes en de" ' ',stokbroden, ' ' "stokbroden als de" ' ' ,kortingsbonnen, ' ' "korting bonnen nog geldig zijn")
