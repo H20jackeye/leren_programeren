@@ -1,8 +1,9 @@
+import random
+getal1 = random.randint(1,10)
+getal2 = random.randint(5,15)
 
-gewicht = int(input("|hoeveel weeg je?"))
-if gewicht >= 90 and gewicht <= 120:
-    weegt_genoeg = True
+number = int(input(f"En weet jij wat {getal1}+{getal2} is?"))
+if number == getal1 + getal2:
+    print(number)
 else:
-    weegt_genoeg = False
-print(gewicht)
-print(weegt_genoeg)
+    print("wrong")

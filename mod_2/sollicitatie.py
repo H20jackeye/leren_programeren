@@ -174,4 +174,3 @@ if man_of_vrouw == "v":
         print("|---------je bent niet geschikt voor het werk-----------")
         print("|-------------------------------------------------------")
     
-print("lol")
